@@ -6,7 +6,7 @@
   --topbar-height: 62px;
 
   --home-hero-height: 250px;
-  --research-hero-height: 250px;
+  --research-hero-height: 520px;
 
   --home-content-width: 1120px;
   --research-content-width: 1360px;
@@ -64,6 +64,15 @@ a:hover {
   padding: 0 24px;
 }
 
+.topbar-transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0));
+  z-index: 20;
+}
+
 .site-name {
   color: white;
   font-size: 22px;
@@ -85,6 +94,11 @@ a:hover {
 
 .nav-links a.active {
   color: #37b6d9;
+}
+
+.nav-links a.active-white {
+  color: white;
+  font-weight: 700;
 }
 
 .nav-links a:hover {
@@ -110,7 +124,7 @@ a:hover {
       rgba(18, 35, 65, 0.55),
       rgba(18, 35, 65, 0.55)
     ),
-    url("assets/mountain.jpg");
+    url("assets/gongga.jpg");
 
   background-size: cover;
   background-position: center 42%;
@@ -189,7 +203,7 @@ a:hover {
 
 /* =========================================================
    Research page hero
-   Uses the SAME mountain image as the home page
+   Uses the church image for the research page
    ========================================================= */
 
 .research-hero {
@@ -197,13 +211,13 @@ a:hover {
 
   background-image:
     linear-gradient(
-      rgba(18, 35, 65, 0.55),
-      rgba(18, 35, 65, 0.55)
+      rgba(28, 20, 14, 0.34),
+      rgba(28, 20, 14, 0.34)
     ),
-    url("assets/mountain.jpg");
+    url("assets/church.jpg");
 
   background-size: cover;
-  background-position: center 42%;
+  background-position: center center;
 
   display: flex;
   justify-content: center;
@@ -276,7 +290,7 @@ a:hover {
   :root {
     --topbar-height: auto;
     --home-hero-height: 210px;
-    --research-hero-height: 210px;
+    --research-hero-height: 340px;
     --research-side-margin: 48px;
   }
 
