@@ -5,8 +5,8 @@
 :root {
   --topbar-height: 62px;
 
-  --home-hero-height: 250px;
-  --research-hero-height: 520px;
+  --home-hero-height: 330px;
+  --research-hero-height: 320px;
 
   --home-content-width: 1120px;
   --research-content-width: 1360px;
@@ -215,7 +215,7 @@ a:hover {
   margin: 0;
   color: white;
   font-weight: 300;
-  font-size: 66px;
+  font-size: 52px;
   letter-spacing: 2px;
 }
 
@@ -242,7 +242,7 @@ a:hover {
 .research-wrapper h2 {
   margin: 0 0 34px 0;
   color: var(--heading-blue);
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -253,19 +253,19 @@ a:hover {
 
 .paper-title {
   margin: 0 0 18px 0;
-  font-size: 23px;
+  font-size: 19px;
   line-height: 1.45;
 }
 
 .paper-note {
   margin: 0 0 18px 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
 .paper-abstract {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.72;
 }
 
@@ -276,8 +276,8 @@ a:hover {
 @media (max-width: 900px) {
   :root {
     --topbar-height: auto;
-    --home-hero-height: 210px;
-    --research-hero-height: 340px;
+    --home-hero-height: 250px;
+    --research-hero-height: 240px;
     --research-side-margin: 48px;
   }
 
@@ -311,9 +311,12 @@ a:hover {
     background-position: center center;
   }
 
-  .hero h1,
-  .research-hero h1 {
+  .hero h1 {
     font-size: 44px;
+  }
+
+  .research-hero h1 {
+    font-size: 38px;
   }
 
   .home-content {
@@ -337,7 +340,7 @@ a:hover {
   }
 
   .research-wrapper h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .paper {
@@ -345,11 +348,11 @@ a:hover {
   }
 
   .paper-title {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .paper-note,
   .paper-abstract {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
