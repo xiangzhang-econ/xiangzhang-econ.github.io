@@ -114,17 +114,11 @@ a:hover {
 
 /* =========================================================
    Home page hero
+   Image is set directly in index.html
    ========================================================= */
 
 .hero {
   height: var(--home-hero-height);
-
-  background-image:
-    linear-gradient(
-      rgba(18, 35, 65, 0.55),
-      rgba(18, 35, 65, 0.55)
-    ),
-    url("/assets/gongga.jpg");
 
   background-size: cover;
   background-position: center 42%;
@@ -203,18 +197,11 @@ a:hover {
 
 /* =========================================================
    Research page hero
-   Uses the church image for the research page
+   Image is set directly in research.html
    ========================================================= */
 
 .research-hero {
   height: var(--research-hero-height);
-
-  background-image:
-    linear-gradient(
-      rgba(28, 20, 14, 0.34),
-      rgba(28, 20, 14, 0.34)
-    ),
-    url("/assets/church.jpg");
 
   background-size: cover;
   background-position: center center;
