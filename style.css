@@ -119,9 +119,7 @@ a:hover {
    ========================================================= */
 
 .hero {
-  width: min(var(--title-photo-width), calc(100vw - 48px));
   height: var(--home-hero-height);
-  margin: 0 auto;
 
   background-size: cover;
   background-position: center 42%;
@@ -204,9 +202,7 @@ a:hover {
    ========================================================= */
 
 .research-hero {
-  width: min(var(--title-photo-width), calc(100vw - 48px));
   height: var(--research-hero-height);
-  margin: 0 auto;
 
   background-size: cover;
   background-position: center center;
