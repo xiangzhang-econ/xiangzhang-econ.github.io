@@ -5,8 +5,9 @@
 :root {
   --topbar-height: 62px;
 
-  --home-hero-height: 330px;
-  --research-hero-height: 320px;
+  --home-hero-height: 260px;
+  --research-hero-height: 180px;
+  --title-photo-width: 1120px;
 
   --home-content-width: 1120px;
   --research-content-width: 1360px;
@@ -118,7 +119,9 @@ a:hover {
    ========================================================= */
 
 .hero {
+  width: min(var(--title-photo-width), calc(100vw - 48px));
   height: var(--home-hero-height);
+  margin: 0 auto;
 
   background-size: cover;
   background-position: center 42%;
@@ -201,7 +204,9 @@ a:hover {
    ========================================================= */
 
 .research-hero {
+  width: min(var(--title-photo-width), calc(100vw - 48px));
   height: var(--research-hero-height);
+  margin: 0 auto;
 
   background-size: cover;
   background-position: center center;
@@ -215,7 +220,7 @@ a:hover {
   margin: 0;
   color: white;
   font-weight: 300;
-  font-size: 52px;
+  font-size: 36px;
   letter-spacing: 2px;
 }
 
@@ -242,7 +247,7 @@ a:hover {
 .research-wrapper h2 {
   margin: 0 0 34px 0;
   color: var(--heading-blue);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -253,19 +258,19 @@ a:hover {
 
 .paper-title {
   margin: 0 0 18px 0;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.45;
 }
 
 .paper-note {
   margin: 0 0 18px 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
 .paper-abstract {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.72;
 }
 
@@ -276,8 +281,8 @@ a:hover {
 @media (max-width: 900px) {
   :root {
     --topbar-height: auto;
-    --home-hero-height: 250px;
-    --research-hero-height: 240px;
+    --home-hero-height: 220px;
+    --research-hero-height: 150px;
     --research-side-margin: 48px;
   }
 
@@ -312,11 +317,11 @@ a:hover {
   }
 
   .hero h1 {
-    font-size: 44px;
+    font-size: 38px;
   }
 
   .research-hero h1 {
-    font-size: 38px;
+    font-size: 30px;
   }
 
   .home-content {
@@ -340,7 +345,7 @@ a:hover {
   }
 
   .research-wrapper h2 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .paper {
@@ -348,11 +353,11 @@ a:hover {
   }
 
   .paper-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .paper-note,
   .paper-abstract {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
