@@ -1,37 +1,67 @@
-/* =========================
-   General
-   ========================= */
+/* =========================================================
+   Global controls
+   ========================================================= */
 
-body {
-  margin: 0;
-  font-family: "Lato", Arial, sans-serif;
-  color: #222;
-  background: #fff;
+:root {
+  --topbar-height: 62px;
+
+  --home-hero-height: 250px;
+  --research-hero-height: 250px;
+
+  --home-content-width: 1120px;
+  --research-content-width: 1360px;
+  --research-side-margin: 240px;
+
+  --dark-navbar: #1f1f1f;
+  --link-blue: #00728a;
+  --heading-blue: #1f78a6;
 }
+
+/* =========================================================
+   General
+   ========================================================= */
 
 * {
   box-sizing: border-box;
 }
 
-/* =========================
-   Top bar
-   ========================= */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--link-blue);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #00a0c6;
+}
+
+/* =========================================================
+   Top navigation bar
+   ========================================================= */
 
 .topbar {
-  height: 72px;
+  height: var(--topbar-height);
+  background: var(--dark-navbar);
+  color: white;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 22px;
-  z-index: 20;
-}
 
-.topbar-transparent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: transparent;
+  padding: 0 24px;
 }
 
 .site-name {
@@ -43,64 +73,175 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 30px;
 }
 
 .nav-links a {
-  color: white;
+  color: #f2f2f2;
   text-decoration: none;
   font-size: 17px;
   font-weight: 400;
 }
 
-.nav-links a.active-white {
+.nav-links a.active {
+  color: #37b6d9;
+}
+
+.nav-links a:hover {
+  color: #37b6d9;
+}
+
+.search-icon {
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+  transform: rotate(-20deg);
+}
+
+/* =========================================================
+   Home page hero
+   ========================================================= */
+
+.hero {
+  height: var(--home-hero-height);
+
+  background-image:
+    linear-gradient(
+      rgba(18, 35, 65, 0.55),
+      rgba(18, 35, 65, 0.55)
+    ),
+    url("assets/mountain.jpg");
+
+  background-size: cover;
+  background-position: center 42%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 28px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 66px;
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   Home page content
+   ========================================================= */
+
+.home-content {
+  background: white;
+  min-height: 720px;
+
+  padding-top: 105px;
+  padding-bottom: 90px;
+}
+
+.home-wrapper {
+  max-width: var(--home-content-width);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 490px 1fr;
+  column-gap: 42px;
+
+  padding: 0 24px;
+}
+
+.photo-column {
+  width: 100%;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bio-column {
+  padding-top: 4px;
+}
+
+.bio-column h2 {
+  margin: 0 0 32px 0;
+  font-size: 26px;
   font-weight: 700;
 }
 
-/* =========================
-   Research hero
-   ========================= */
+.bio-column h3 {
+  margin: 34px 0 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bio-column p {
+  margin: 0 0 20px 0;
+}
+
+.quick-links a {
+  margin-right: 4px;
+}
+
+/* =========================================================
+   Research page hero
+   Uses the SAME mountain image as the home page
+   ========================================================= */
 
 .research-hero {
-  height: 400px;   /* increase if you want more of the image */
+  height: var(--research-hero-height);
+
   background-image:
-    linear-gradient(rgba(40, 28, 18, 0.42), rgba(40, 28, 18, 0.42)),
-    url("assets/church.jpg");
+    linear-gradient(
+      rgba(18, 35, 65, 0.55),
+      rgba(18, 35, 65, 0.55)
+    ),
+    url("assets/mountain.jpg");
+
   background-size: cover;
   background-position: center 42%;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .research-hero h1 {
   margin: 0;
   color: white;
-  font-size: 72px;
   font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 66px;
+  letter-spacing: 2px;
 }
 
-/* =========================
-   Research content
-   ========================= */
+/* =========================================================
+   Research page content
+   ========================================================= */
 
 .research-content {
   background: white;
-  padding-top: 44px;
-  padding-bottom: 80px;
+  padding-top: 52px;
+  padding-bottom: 100px;
+  min-height: 650px;
 }
 
-/* This is the key part for matching your screenshot */
 .research-wrapper {
-  width: min(1360px, calc(100vw - 240px));
+  width: min(
+    var(--research-content-width),
+    calc(100vw - var(--research-side-margin))
+  );
+
   margin: 0 auto;
 }
 
 .research-wrapper h2 {
   margin: 0 0 34px 0;
-  color: #1f78a6;
-  font-size: 38px;
+  color: var(--heading-blue);
+  font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -111,7 +252,7 @@ body {
 
 .paper-title {
   margin: 0 0 18px 0;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 1.45;
 }
 
@@ -123,46 +264,91 @@ body {
 
 .paper-abstract {
   margin: 0;
-  font-size: 17px;
-  line-height: 1.75;
+  font-size: 18px;
+  line-height: 1.72;
 }
 
-/* =========================
-   Mobile
-   ========================= */
+/* =========================================================
+   Mobile layout
+   ========================================================= */
 
 @media (max-width: 900px) {
+  :root {
+    --topbar-height: auto;
+    --home-hero-height: 210px;
+    --research-hero-height: 210px;
+    --research-side-margin: 48px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
   .topbar {
-    padding: 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    padding: 16px 22px;
   }
 
   .nav-links {
     gap: 18px;
+    flex-wrap: wrap;
   }
 
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .search-icon {
+    font-size: 24px;
+  }
+
+  .hero,
   .research-hero {
-    height: 280px;
     background-position: center center;
   }
 
+  .hero h1,
   .research-hero h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
 
-  .research-wrapper {
-    width: calc(100vw - 48px);
+  .home-content {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .home-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .profile-photo {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .research-content {
+    padding-top: 42px;
+    padding-bottom: 70px;
   }
 
   .research-wrapper h2 {
     font-size: 30px;
   }
 
+  .paper {
+    margin-bottom: 42px;
+  }
+
   .paper-title {
     font-size: 21px;
   }
 
-  .paper-abstract,
-  .paper-note {
+  .paper-note,
+  .paper-abstract {
     font-size: 16px;
   }
 }
