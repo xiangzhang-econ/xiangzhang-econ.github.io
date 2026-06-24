@@ -124,7 +124,7 @@ a:hover {
       rgba(18, 35, 65, 0.55),
       rgba(18, 35, 65, 0.55)
     ),
-    url("assets/gongga.jpg");
+    url("/assets/gongga.jpg");
 
   background-size: cover;
   background-position: center 42%;
@@ -157,10 +157,24 @@ a:hover {
 }
 
 .home-wrapper {
-  max-width: 860px;
+  max-width: var(--home-content-width);
   margin: 0 auto;
 
-  padding: 0 56px;
+  display: grid;
+  grid-template-columns: 490px 1fr;
+  column-gap: 42px;
+
+  padding: 0 24px;
+}
+
+.photo-column {
+  width: 100%;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .bio-column {
@@ -200,7 +214,7 @@ a:hover {
       rgba(28, 20, 14, 0.34),
       rgba(28, 20, 14, 0.34)
     ),
-    url("assets/church.jpg");
+    url("/assets/church.jpg");
 
   background-size: cover;
   background-position: center center;
@@ -321,7 +335,13 @@ a:hover {
   }
 
   .home-wrapper {
-    padding: 0 24px;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .profile-photo {
+    max-width: 520px;
+    margin: 0 auto;
   }
 
   .research-content {
