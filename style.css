@@ -90,7 +90,7 @@ a:hover {
   color: #f2f2f2;
   text-decoration: none;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .nav-links a.active {
@@ -99,18 +99,11 @@ a:hover {
 
 .nav-links a.active-white {
   color: white;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .nav-links a:hover {
   color: #37b6d9;
-}
-
-.search-icon {
-  font-size: 30px;
-  line-height: 1;
-  color: white;
-  transform: rotate(-20deg);
 }
 
 /* =========================================================
@@ -122,13 +115,11 @@ a:hover {
   height: var(--home-hero-height);
 
   background-size: cover;
-  background-position: center 42%;
+  background-position: center 50%;
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-
-  padding-top: 28px;
+  align-items: center;
 }
 
 .hero h1 {
@@ -216,7 +207,7 @@ a:hover {
   margin: 0;
   color: white;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 66px;
   letter-spacing: 2px;
 }
 
@@ -254,20 +245,21 @@ a:hover {
 
 .paper-title {
   margin: 0 0 18px 0;
-  font-size: 17px;
+  font-size: 14pt;
   line-height: 1.45;
 }
 
 .paper-note {
   margin: 0 0 18px 0;
-  font-size: 14px;
+  font-size: 12pt;
   line-height: 1.6;
 }
 
 .paper-abstract {
   margin: 0;
-  font-size: 14px;
+  font-size: 12pt;
   line-height: 1.72;
+  text-align: justify;
 }
 
 /* =========================================================
@@ -303,21 +295,14 @@ a:hover {
     font-size: 16px;
   }
 
-  .search-icon {
-    font-size: 24px;
-  }
-
   .hero,
   .research-hero {
     background-position: center center;
   }
 
-  .hero h1 {
-    font-size: 38px;
-  }
-
+  .hero h1,
   .research-hero h1 {
-    font-size: 30px;
+    font-size: 38px;
   }
 
   .home-content {
@@ -349,11 +334,11 @@ a:hover {
   }
 
   .paper-title {
-    font-size: 16px;
+    font-size: 14pt;
   }
 
   .paper-note,
   .paper-abstract {
-    font-size: 14px;
+    font-size: 12pt;
   }
 }
