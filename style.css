@@ -1,0 +1,258 @@
+/* =========================
+   Main height controls
+   ========================= */
+
+:root {
+  --topbar-height: 62px;
+  --hero-height: 250px;
+  --main-top-padding: 105px;
+  --main-bottom-padding: 90px;
+  --content-width: 1120px;
+}
+
+/* =========================
+   General page style
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+a {
+  color: #00728a;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #00a0c6;
+}
+
+/* =========================
+   Block 1: top nav
+   ========================= */
+
+.topbar {
+  height: var(--topbar-height);          /* Change navbar height here */
+  background: #1f1f1f;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+}
+
+.site-name {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-links a.active {
+  color: #37b6d9;
+}
+
+.nav-links a:hover {
+  color: #37b6d9;
+}
+
+.search-icon {
+  font-size: 30px;
+  line-height: 1;
+  color: white;
+  transform: rotate(-20deg);
+}
+
+/* =========================
+   Block 2: hero image
+   ========================= */
+
+.hero {
+  height: var(--hero-height);            /* Change hero/banner height here */
+
+  background-image:
+    linear-gradient(
+      rgba(18, 35, 65, 0.55),
+      rgba(18, 35, 65, 0.55)
+    ),
+    url("assets/mountain.jpg");
+
+  background-size: cover;
+  background-position: center 42%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 28px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 66px;
+  letter-spacing: 2px;
+}
+
+/* =========================
+   Block 3: main content
+   ========================= */
+
+.main-section {
+  min-height: 720px;                     /* Main block minimum height */
+  padding-top: var(--main-top-padding);  /* White space above photo/text */
+  padding-bottom: var(--main-bottom-padding);
+  background: white;
+}
+
+.content-wrapper {
+  max-width: var(--content-width);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 490px 1fr;
+  gap: 42px;
+
+  padding: 0 24px;
+}
+
+.profile-photo {
+  width: 100%;
+  display: block;
+}
+
+.text-column {
+  padding-top: 4px;
+}
+
+.text-column h2 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.text-column h3 {
+  margin-top: 34px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text-column p {
+  margin: 0 0 20px 0;
+}
+
+/* =========================
+   Mobile / small screens
+   ========================= */
+
+@media (max-width: 850px) {
+  :root {
+    --topbar-height: auto;
+    --hero-height: 210px;
+    --main-top-padding: 50px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 22px;
+  }
+
+  .nav-links {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .profile-photo {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+/* =========================
+   Research content
+   ========================= */
+
+.research-content {
+  min-height: 520px;
+  padding-top: var(--research-content-top-padding);
+  padding-bottom: var(--research-content-bottom-padding);
+  background: white;
+}
+
+.research-wrapper {
+  max-width: var(--research-content-width);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.research-wrapper h2 {
+  margin: 0 0 38px 0;
+  color: #0b6f8e;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.research-wrapper .section-heading {
+  margin-top: 58px;
+}
+
+.paper {
+  margin-bottom: 42px;
+}
+
+.short-paper {
+  margin-bottom: 22px;
+}
+
+.paper-title {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.paper-note {
+  margin-top: -6px;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.paper p {
+  font-size: 18px;
+  line-height: 1.65;
+  margin: 0 0 18px 0;
+}
