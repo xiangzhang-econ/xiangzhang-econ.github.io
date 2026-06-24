@@ -249,6 +249,13 @@ a:hover {
   line-height: 1.45;
 }
 
+.paper-link {
+  display: inline-block;
+  font-size: 12pt;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
 .paper-note {
   margin: 0 0 18px 0;
   font-size: 12pt;
