@@ -1,61 +1,41 @@
 /* =========================
-   Main height controls
+   General
    ========================= */
-
-:root {
-  --topbar-height: 62px;
-  --hero-height: 250px;
-  --main-top-padding: 105px;
-  --main-bottom-padding: 90px;
-  --content-width: 1120px;
-  --research-content-width: 860px;
-  --research-content-top-padding: 72px;
-  --research-content-bottom-padding: 90px;
-}
-
-/* =========================
-   General page style
-   ========================= */
-
-* {
-  box-sizing: border-box;
-}
 
 body {
   margin: 0;
   font-family: "Lato", Arial, sans-serif;
   color: #222;
   background: #fff;
-  font-size: 18px;
-  line-height: 1.65;
 }
 
-a {
-  color: #00728a;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #00a0c6;
+* {
+  box-sizing: border-box;
 }
 
 /* =========================
-   Block 1: top nav
+   Top bar
    ========================= */
 
 .topbar {
-  height: var(--topbar-height);          /* Change navbar height here */
-  background: #1f1f1f;
-  color: white;
-
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 22px;
+  z-index: 20;
+}
 
-  padding: 0 24px;
+.topbar-transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
 }
 
 .site-name {
+  color: white;
   font-size: 22px;
   font-weight: 300;
 }
@@ -63,147 +43,42 @@ a:hover {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 34px;
 }
 
 .nav-links a {
-  color: #f2f2f2;
+  color: white;
   text-decoration: none;
   font-size: 17px;
+  font-weight: 400;
 }
 
-.nav-links a.active {
-  color: #37b6d9;
-}
-
-.nav-links a:hover {
-  color: #37b6d9;
-}
-
-.search-icon {
-  font-size: 30px;
-  line-height: 1;
-  color: white;
-  transform: rotate(-20deg);
+.nav-links a.active-white {
+  font-weight: 700;
 }
 
 /* =========================
-   Block 2: hero image
+   Research hero
    ========================= */
 
-.hero {
-  height: var(--hero-height);            /* Change hero/banner height here */
-
+.research-hero {
+  height: 400px;   /* increase if you want more of the image */
   background-image:
-    linear-gradient(
-      rgba(18, 35, 65, 0.55),
-      rgba(18, 35, 65, 0.55)
-    ),
-    url("assets/mountain.jpg");
-
+    linear-gradient(rgba(40, 28, 18, 0.42), rgba(40, 28, 18, 0.42)),
+    url("assets/research-banner.jpg");
   background-size: cover;
   background-position: center 42%;
-
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-
-  padding-top: 28px;
 }
 
-.hero h1 {
+.research-hero h1 {
   margin: 0;
   color: white;
+  font-size: 72px;
   font-weight: 300;
-  font-size: 66px;
-  letter-spacing: 2px;
-}
-
-/* =========================
-   Block 3: main content
-   ========================= */
-
-.main-section {
-  min-height: 720px;                     /* Main block minimum height */
-  padding-top: var(--main-top-padding);  /* White space above photo/text */
-  padding-bottom: var(--main-bottom-padding);
-  background: white;
-}
-
-.content-wrapper {
-  max-width: var(--content-width);
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: 490px 1fr;
-  gap: 42px;
-
-  padding: 0 24px;
-}
-
-.profile-photo {
-  width: 100%;
-  display: block;
-}
-
-.text-column {
-  padding-top: 4px;
-}
-
-.text-column h2 {
-  margin-top: 0;
-  margin-bottom: 32px;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.text-column h3 {
-  margin-top: 34px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.text-column p {
-  margin: 0 0 20px 0;
-}
-
-/* =========================
-   Mobile / small screens
-   ========================= */
-
-@media (max-width: 850px) {
-  :root {
-    --topbar-height: auto;
-    --hero-height: 210px;
-    --main-top-padding: 50px;
-  }
-
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 16px 22px;
-  }
-
-  .nav-links {
-    gap: 18px;
-    flex-wrap: wrap;
-  }
-
-  .hero h1 {
-    font-size: 44px;
-  }
-
-  .content-wrapper {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .profile-photo {
-    max-width: 520px;
-    margin: 0 auto;
-  }
+  letter-spacing: 1px;
 }
 
 /* =========================
@@ -211,59 +86,83 @@ a:hover {
    ========================= */
 
 .research-content {
-  min-height: 520px;
-  padding-top: var(--research-content-top-padding);
-  padding-bottom: var(--research-content-bottom-padding);
   background: white;
+  padding-top: 44px;
+  padding-bottom: 80px;
 }
 
+/* This is the key part for matching your screenshot */
 .research-wrapper {
-  max-width: var(--research-content-width);
+  width: min(1360px, calc(100vw - 240px));
   margin: 0 auto;
-  padding: 0 56px;
 }
 
 .research-wrapper h2 {
-  margin: 0 0 38px 0;
-  color: #0b6f8e;
-  font-size: 34px;
+  margin: 0 0 34px 0;
+  color: #1f78a6;
+  font-size: 38px;
   font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.research-wrapper .section-heading {
-  margin-top: 58px;
+  letter-spacing: 0.5px;
 }
 
 .paper {
-  margin-bottom: 42px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #e5eef1;
-}
-
-.paper:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.short-paper {
-  margin-bottom: 22px;
+  margin-bottom: 54px;
 }
 
 .paper-title {
-  font-size: 22px;
-  margin-bottom: 16px;
+  margin: 0 0 18px 0;
+  font-size: 24px;
+  line-height: 1.45;
 }
 
 .paper-note {
-  margin-top: -6px;
-  margin-bottom: 16px;
-  font-style: italic;
+  margin: 0 0 18px 0;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.paper p {
-  font-size: 18px;
-  line-height: 1.65;
-  margin: 0 0 18px 0;
+.paper-abstract {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 900px) {
+  .topbar {
+    padding: 0 16px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .research-hero {
+    height: 280px;
+    background-position: center center;
+  }
+
+  .research-hero h1 {
+    font-size: 48px;
+  }
+
+  .research-wrapper {
+    width: calc(100vw - 48px);
+  }
+
+  .research-wrapper h2 {
+    font-size: 30px;
+  }
+
+  .paper-title {
+    font-size: 21px;
+  }
+
+  .paper-abstract,
+  .paper-note {
+    font-size: 16px;
+  }
 }
