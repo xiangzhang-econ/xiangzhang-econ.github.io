@@ -8,6 +8,9 @@
   --main-top-padding: 105px;
   --main-bottom-padding: 90px;
   --content-width: 1120px;
+  --research-content-width: 860px;
+  --research-content-top-padding: 72px;
+  --research-content-bottom-padding: 90px;
 }
 
 /* =========================
@@ -217,7 +220,7 @@ a:hover {
 .research-wrapper {
   max-width: var(--research-content-width);
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 56px;
 }
 
 .research-wrapper h2 {
@@ -234,6 +237,14 @@ a:hover {
 
 .paper {
   margin-bottom: 42px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5eef1;
+}
+
+.paper:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .short-paper {
