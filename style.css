@@ -65,7 +65,7 @@ body {
   height: 400px;   /* increase if you want more of the image */
   background-image:
     linear-gradient(rgba(40, 28, 18, 0.42), rgba(40, 28, 18, 0.42)),
-    url("assets/research-banner.jpg");
+    url("assets/church.jpg");
   background-size: cover;
   background-position: center 42%;
   display: flex;
