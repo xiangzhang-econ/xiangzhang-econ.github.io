@@ -11,6 +11,7 @@
 
   --home-content-width: 1120px;
   --research-content-width: 1360px;
+  --code-content-width: 1360px;
   --research-side-margin: 240px;
 
   --dark-navbar: #1f1f1f;
@@ -270,6 +271,73 @@ a:hover {
 }
 
 /* =========================================================
+   Code page hero
+   Image is set directly in code.html
+   ========================================================= */
+
+.code-hero {
+  height: var(--research-hero-height);
+
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-hero h1 {
+  margin: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 66px;
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   Code page content
+   ========================================================= */
+
+.code-content {
+  background: white;
+  padding-top: 46px;
+  padding-bottom: 100px;
+  min-height: 650px;
+}
+
+.code-wrapper {
+  width: min(
+    var(--code-content-width),
+    calc(100vw - var(--research-side-margin))
+  );
+
+  margin: 0 auto;
+}
+
+.code-intro {
+  margin: 0 0 72px 0;
+  font-size: 14pt;
+  line-height: 1.6;
+}
+
+.code-item {
+  margin-bottom: 68px;
+}
+
+.code-item h2 {
+  margin: 0 0 18px 0;
+  font-size: 14pt;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.code-item p {
+  margin: 0 0 18px 0;
+  font-size: 14pt;
+  line-height: 1.65;
+}
+
+/* =========================================================
    Mobile layout
    ========================================================= */
 
@@ -303,12 +371,14 @@ a:hover {
   }
 
   .hero,
-  .research-hero {
+  .research-hero,
+  .code-hero {
     background-position: center center;
   }
 
   .hero h1,
-  .research-hero h1 {
+  .research-hero h1,
+  .code-hero h1 {
     font-size: 38px;
   }
 
@@ -346,6 +416,24 @@ a:hover {
 
   .paper-note,
   .paper-abstract {
+    font-size: 12pt;
+  }
+
+  .code-content {
+    padding-top: 42px;
+    padding-bottom: 70px;
+  }
+
+  .code-intro {
+    margin-bottom: 48px;
+  }
+
+  .code-item {
+    margin-bottom: 48px;
+  }
+
+  .code-item h2,
+  .code-item p {
     font-size: 12pt;
   }
 }
