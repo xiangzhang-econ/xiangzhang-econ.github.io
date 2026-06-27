@@ -136,6 +136,9 @@ a:hover {
    ========================================================= */
 
 .home-content {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 300;
+  color: #383838;
   background: white;
   min-height: 720px;
 
@@ -217,6 +220,9 @@ a:hover {
    ========================================================= */
 
 .research-content {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 300;
+  color: #383838;
   background: white;
   padding-top: 52px;
   padding-bottom: 100px;
@@ -233,7 +239,7 @@ a:hover {
 }
 
 .research-wrapper h2 {
-  margin: 0 0 34px 0;
+  margin: 0 0 28px 0;
   color: var(--heading-blue);
   font-size: 20px;
   font-weight: 700;
@@ -241,11 +247,11 @@ a:hover {
 }
 
 .paper {
-  margin-bottom: 54px;
+  margin-bottom: 38px;
 }
 
 .paper-title {
-  margin: 0 0 18px 0;
+  margin: 0 0 6px 0;
   font-size: 14pt;
   line-height: 1.45;
 }
@@ -258,9 +264,42 @@ a:hover {
 }
 
 .paper-note {
-  margin: 0 0 18px 0;
+  margin: 0 0 10px 0;
   font-size: 12pt;
-  line-height: 1.6;
+  line-height: 1.45;
+}
+
+.abstract-toggle {
+  margin: 0;
+}
+
+.abstract-toggle summary {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--link-blue);
+  color: var(--link-blue);
+  cursor: pointer;
+  font-size: 10pt;
+  font-weight: 400;
+  line-height: 1.25;
+  list-style: none;
+}
+
+.abstract-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-toggle summary:hover {
+  color: #00a0c6;
+  border-color: #00a0c6;
+}
+
+.abstract-toggle[open] summary {
+  margin-bottom: 14px;
+}
+
+.abstract-toggle[open] summary::after {
+  content: " - Hide";
 }
 
 .paper-abstract {
@@ -299,6 +338,9 @@ a:hover {
    ========================================================= */
 
 .code-content {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 300;
+  color: #383838;
   background: white;
   padding-top: 46px;
   padding-bottom: 100px;
@@ -407,7 +449,7 @@ a:hover {
   }
 
   .paper {
-    margin-bottom: 42px;
+    margin-bottom: 34px;
   }
 
   .paper-title {
