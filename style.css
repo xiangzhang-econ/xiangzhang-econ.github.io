@@ -9,7 +9,7 @@
   --research-hero-height: 180px;
   --title-photo-width: 1120px;
 
-  --home-content-width: 1120px;
+  --home-content-width: 1080px;
   --research-content-width: 980px;
   --code-content-width: 980px;
   --research-side-margin: 240px;
@@ -143,7 +143,7 @@ a:hover {
   background: white;
   min-height: 720px;
 
-  padding-top: 64px;
+  padding-top: 58px;
   padding-bottom: 90px;
 }
 
@@ -152,34 +152,88 @@ a:hover {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 505px 1fr;
-  column-gap: 42px;
+  grid-template-columns: 238px minmax(0, 1fr);
+  column-gap: 72px;
+  align-items: start;
 
   padding: 0 24px;
 }
 
 .photo-column {
   width: 100%;
+  padding-top: 8px;
+}
+
+.profile-photo {
+  width: 132px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #d8e3e8;
+  background: #f4f8fa;
+  color: #1f2f38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.profile-name {
+  margin: 22px 0 4px 0;
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.profile-role,
+.profile-affiliation {
+  margin: 0 0 4px 0;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.profile-links {
+  margin: 18px 0 0 0;
+  color: #888;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.profile-links a {
+  display: block;
+  width: fit-content;
+  margin-bottom: 3px;
+  white-space: nowrap;
 }
 
 .bio-column {
-  padding-top: 4px;
+  max-width: 760px;
+  padding-top: 0;
 }
 
 .bio-column h2 {
-  margin: 0 0 32px 0;
-  font-size: 26px;
-  font-weight: 700;
+  margin: 0 0 24px 0;
+  color: #111;
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 .bio-column h3 {
   margin: 34px 0 10px 0;
-  font-size: 18px;
-  font-weight: 700;
+  color: #111;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
 }
 
 .bio-column p {
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .research-summary {
@@ -187,8 +241,12 @@ a:hover {
   text-align-last: left;
 }
 
+.contact-block {
+  margin-top: 34px;
+}
+
 .contact-block h3 {
-  margin-top: 51px;
+  margin-top: 46px;
   margin-bottom: 8px;
 }
 
@@ -493,12 +551,38 @@ a:hover {
   }
 
   .home-wrapper {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
     padding: 0 24px;
   }
 
   .photo-column {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 112px;
+  }
+
+  .profile-name {
+    margin-top: 16px;
+  }
+
+  .bio-column {
+    max-width: 100%;
+  }
+
+  .bio-column h2 {
+    font-size: 28px;
+  }
+
+  .bio-column p {
+    font-size: 18px;
   }
 
   .research-content {
