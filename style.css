@@ -152,7 +152,7 @@ a:hover {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 490px 1fr;
+  grid-template-columns: 505px 1fr;
   column-gap: 42px;
 
   padding: 0 24px;
@@ -180,6 +180,21 @@ a:hover {
 
 .bio-column p {
   margin: 0 0 20px 0;
+}
+
+.research-summary {
+  text-align: justify;
+  text-align-last: left;
+}
+
+.contact-block h3 {
+  margin-top: 51px;
+  margin-bottom: 8px;
+}
+
+.contact-block p {
+  margin-bottom: 8px;
+  line-height: 1.48;
 }
 
 .quick-links a {
