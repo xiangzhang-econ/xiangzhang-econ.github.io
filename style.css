@@ -276,6 +276,17 @@ a:hover {
   line-height: 1.45;
 }
 
+.coauthor-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.coauthor-link:hover {
+  color: var(--link-blue);
+}
+
 .paper-status {
   margin: 0 0 10px 0;
   color: #4c4c4c;
