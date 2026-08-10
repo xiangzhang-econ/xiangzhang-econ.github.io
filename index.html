@@ -20,8 +20,8 @@
 
 <body class="home-page">
 
-  <header class="topbar topbar-transparent">
-    <div class="site-name">Xiang Zhang</div>
+  <header class="topbar">
+    <a class="site-name" href="index.html">Xiang Zhang</a>
 
     <nav class="nav-links">
       <a href="index.html" class="active-white">Home</a>
@@ -31,16 +31,10 @@
     </nav>
   </header>
 
-  <section class="hero" style="height: 360px; background-image: linear-gradient(rgba(18, 35, 65, 0.55), rgba(18, 35, 65, 0.55)), url('assets/gongga.jpg');">
-    <h1>Xiang Zhang</h1>
-  </section>
-
   <main class="home-content">
     <div class="home-wrapper">
 
-      <div class="photo-column">
-        <img src="assets/profile.jpg" alt="Xiang Zhang" class="profile-photo" onerror="this.hidden = true" />
-      </div>
+      <div class="photo-column" aria-hidden="true"></div>
 
       <div class="bio-column">
         <h2>Welcome!</h2>
@@ -55,7 +49,7 @@
         </p>
 
         <p>
-          Secondary fields: Spatial Economics, labor economics
+          Secondary fields: Spatial Economics, Urban Economics
         </p>
 
         <p class="quick-links">

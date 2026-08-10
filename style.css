@@ -10,7 +10,7 @@
   --title-photo-width: 1120px;
 
   --home-content-width: 1120px;
-  --research-content-width: 1360px;
+  --research-content-width: 980px;
   --code-content-width: 1360px;
   --research-side-margin: 240px;
 
@@ -56,8 +56,8 @@ a:hover {
 
 .topbar {
   height: var(--topbar-height);
-  background: var(--dark-navbar);
-  color: white;
+  background: #fff;
+  color: #111;
 
   display: flex;
   align-items: center;
@@ -71,14 +71,15 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0));
+  background: #fff;
   z-index: 20;
 }
 
 .site-name {
-  color: white;
+  color: #111;
   font-size: 22px;
   font-weight: 300;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -88,7 +89,7 @@ a:hover {
 }
 
 .nav-links a {
-  color: #f2f2f2;
+  color: #111;
   text-decoration: none;
   font-size: 17px;
   font-weight: 300;
@@ -99,7 +100,7 @@ a:hover {
 }
 
 .nav-links a.active-white {
-  color: white;
+  color: #111;
   font-weight: 400;
 }
 
@@ -142,7 +143,7 @@ a:hover {
   background: white;
   min-height: 720px;
 
-  padding-top: 105px;
+  padding-top: 64px;
   padding-bottom: 90px;
 }
 
@@ -159,12 +160,6 @@ a:hover {
 
 .photo-column {
   width: 100%;
-}
-
-.profile-photo {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .bio-column {
@@ -232,28 +227,39 @@ a:hover {
 .research-wrapper {
   width: min(
     var(--research-content-width),
-    calc(100vw - var(--research-side-margin))
+    calc(100vw - 96px)
   );
 
   margin: 0 auto;
 }
 
 .research-wrapper h2 {
-  margin: 0 0 28px 0;
-  color: var(--heading-blue);
-  font-size: 20px;
+  margin: 0 0 30px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbe8ee;
+  color: #176f8c;
+  font-size: 19px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.7px;
+}
+
+.research-wrapper h2.section-heading-secondary {
+  margin-top: 72px;
 }
 
 .paper {
-  margin-bottom: 38px;
+  margin-bottom: 25px;
 }
 
 .paper-title {
   margin: 0 0 6px 0;
   font-size: 14pt;
   line-height: 1.45;
+}
+
+.paper-title strong {
+  color: #1f2f38;
+  font-weight: 600;
 }
 
 .paper-link {
@@ -265,8 +271,20 @@ a:hover {
 
 .paper-note {
   margin: 0 0 10px 0;
+  color: #4c4c4c;
   font-size: 12pt;
   line-height: 1.45;
+}
+
+.paper-status {
+  margin: 0 0 10px 0;
+  color: #4c4c4c;
+  font-size: 12pt;
+  line-height: 1.45;
+}
+
+.journal-name {
+  font-weight: 400;
 }
 
 .abstract-toggle {
@@ -430,13 +448,12 @@ a:hover {
   }
 
   .home-wrapper {
-    grid-template-columns: 1fr;
-    row-gap: 32px;
+    display: block;
+    padding: 0 24px;
   }
 
-  .profile-photo {
-    max-width: 520px;
-    margin: 0 auto;
+  .photo-column {
+    display: none;
   }
 
   .research-content {
@@ -444,12 +461,16 @@ a:hover {
     padding-bottom: 70px;
   }
 
+  .research-wrapper {
+    width: calc(100vw - 48px);
+  }
+
   .research-wrapper h2 {
     font-size: 18px;
   }
 
   .paper {
-    margin-bottom: 34px;
+    margin-bottom: 25px;
   }
 
   .paper-title {
