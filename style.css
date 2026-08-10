@@ -284,7 +284,8 @@ a:hover {
 }
 
 .journal-name {
-  font-weight: 400;
+  color: #222;
+  font-weight: 500;
 }
 
 .abstract-toggle {
