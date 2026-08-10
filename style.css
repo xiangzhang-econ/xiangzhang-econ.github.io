@@ -11,7 +11,7 @@
 
   --home-content-width: 1120px;
   --research-content-width: 980px;
-  --code-content-width: 1360px;
+  --code-content-width: 980px;
   --research-side-margin: 240px;
 
   --dark-navbar: #1f1f1f;
@@ -296,7 +296,7 @@ a:hover {
 }
 
 .coauthor-link {
-  color: #4c4c4c;
+  color: #111;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
@@ -406,7 +406,7 @@ a:hover {
 .code-wrapper {
   width: min(
     var(--code-content-width),
-    calc(100vw - var(--research-side-margin))
+    calc(100vw - 96px)
   );
 
   margin: 0 auto;
@@ -419,20 +419,27 @@ a:hover {
 }
 
 .code-item {
-  margin-bottom: 68px;
+  margin-bottom: 25px;
 }
 
 .code-item h2 {
-  margin: 0 0 18px 0;
+  margin: 0 0 6px 0;
   font-size: 14pt;
   line-height: 1.45;
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.code-item h2 a {
+  color: #1f2f38;
+  font-weight: 600;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 .code-item p {
-  margin: 0 0 18px 0;
-  font-size: 14pt;
-  line-height: 1.65;
+  margin: 0 0 10px 0;
+  font-size: 12pt;
+  line-height: 1.45;
 }
 
 /* =========================================================
@@ -530,10 +537,13 @@ a:hover {
   }
 
   .code-item {
-    margin-bottom: 48px;
+    margin-bottom: 25px;
   }
 
-  .code-item h2,
+  .code-item h2 {
+    font-size: 14pt;
+  }
+
   .code-item p {
     font-size: 12pt;
   }
