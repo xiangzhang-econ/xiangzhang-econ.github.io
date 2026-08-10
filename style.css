@@ -277,14 +277,14 @@ a:hover {
 }
 
 .coauthor-link {
-  color: inherit;
+  color: #4c4c4c;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
 .coauthor-link:hover {
-  color: var(--link-blue);
+  color: #111;
 }
 
 .paper-status {
