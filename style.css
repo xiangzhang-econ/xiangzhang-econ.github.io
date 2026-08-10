@@ -269,6 +269,10 @@ a:hover {
   white-space: nowrap;
 }
 
+.paper-link + .paper-link {
+  margin-left: 4px;
+}
+
 .paper-note {
   margin: 0 0 10px 0;
   color: #4c4c4c;
