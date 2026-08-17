@@ -502,6 +502,14 @@ a:hover {
   text-underline-offset: 2px;
 }
 
+.code-item h2 a.code-action-link {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12pt;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
 .code-item p {
   margin: 0 0 10px 0;
   font-size: 12pt;
