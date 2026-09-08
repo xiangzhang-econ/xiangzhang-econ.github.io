@@ -15,8 +15,15 @@
   --research-side-margin: 240px;
 
   --dark-navbar: #1f1f1f;
-  --link-blue: #00728a;
-  --heading-blue: #1f78a6;
+  --link-blue: #176b78;
+  --heading-blue: #176b78;
+
+  --home-paper: #fff;
+  --home-ink: #23282b;
+  --home-muted: #626a6e;
+  --home-accent: #176b78;
+  --home-accent-hover: #0e4f59;
+  --home-line: #d8e2e4;
 }
 
 /* =========================================================
@@ -35,7 +42,7 @@ body {
 
 body {
   font-family: "Lato", Arial, sans-serif;
-  color: #222;
+  color: var(--home-ink);
   background: #fff;
   font-size: 18px;
   line-height: 1.65;
@@ -47,7 +54,7 @@ a {
 }
 
 a:hover {
-  color: #00a0c6;
+  color: var(--home-accent-hover);
 }
 
 /* =========================================================
@@ -57,7 +64,7 @@ a:hover {
 .topbar {
   height: var(--topbar-height);
   background: #fff;
-  color: #111;
+  color: var(--home-ink);
 
   display: flex;
   align-items: center;
@@ -76,7 +83,7 @@ a:hover {
 }
 
 .site-name {
-  color: #111;
+  color: var(--home-ink);
   font-size: 22px;
   font-weight: 300;
   text-decoration: none;
@@ -89,23 +96,23 @@ a:hover {
 }
 
 .nav-links a {
-  color: #111;
+  color: #3c4448;
   text-decoration: none;
   font-size: 17px;
   font-weight: 300;
 }
 
 .nav-links a.active {
-  color: #37b6d9;
+  color: var(--home-accent);
 }
 
 .nav-links a.active-white {
-  color: #111;
+  color: var(--home-accent);
   font-weight: 400;
 }
 
 .nav-links a:hover {
-  color: #37b6d9;
+  color: var(--home-accent-hover);
 }
 
 /* =========================================================
@@ -136,14 +143,55 @@ a:hover {
    Home page content
    ========================================================= */
 
+.home-page {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: var(--home-ink);
+  background: var(--home-paper);
+}
+
+.home-page .topbar {
+  height: 68px;
+  padding-right: max(24px, calc((100vw - var(--home-content-width)) / 2 + 24px));
+  padding-left: max(24px, calc((100vw - var(--home-content-width)) / 2 + 24px));
+  background: var(--home-paper);
+}
+
+.home-page .site-name {
+  color: var(--home-ink);
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.home-page .nav-links {
+  gap: 28px;
+}
+
+.home-page .nav-links a {
+  padding: 4px 0 3px;
+  border-bottom: 2px solid transparent;
+  color: #3c4448;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.home-page .nav-links a.active-white {
+  border-bottom-color: var(--home-accent);
+  color: var(--home-accent);
+  font-weight: 600;
+}
+
+.home-page .nav-links a:hover {
+  color: var(--home-accent-hover);
+}
+
 .home-content {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  font-weight: 300;
-  color: #383838;
-  background: white;
-  min-height: 720px;
+  font-weight: 400;
+  color: var(--home-ink);
+  background: var(--home-paper);
+  min-height: calc(100vh - 68px);
 
-  padding-top: 58px;
+  padding-top: 68px;
   padding-bottom: 90px;
 }
 
@@ -152,8 +200,8 @@ a:hover {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 238px minmax(0, 1fr);
-  column-gap: 72px;
+  grid-template-columns: 230px minmax(0, 1fr);
+  column-gap: 68px;
   align-items: start;
 
   padding: 0 24px;
@@ -161,15 +209,16 @@ a:hover {
 
 .photo-column {
   width: 100%;
-  padding-top: 8px;
+  padding-top: 5px;
 }
 
 .profile-photo-frame {
   width: 180px;
   aspect-ratio: 1;
   border-radius: 50%;
-  border: 1px solid #d8e3e8;
-  background: #f4f8fa;
+  border: 1px solid var(--home-line);
+  background: #f2f6f7;
+  box-shadow: 0 8px 24px rgba(23, 69, 76, 0.08);
   overflow: hidden;
 }
 
@@ -185,8 +234,8 @@ a:hover {
 
 .profile-name {
   margin: 22px 0 4px 0;
-  color: #111;
-  font-size: 18px;
+  color: var(--home-ink);
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -194,34 +243,44 @@ a:hover {
 .profile-role,
 .profile-affiliation {
   margin: 0 0 4px 0;
-  color: #555;
+  color: var(--home-muted);
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.4;
 }
 
 .profile-links {
-  margin: 18px 0 0 0;
-  color: #888;
+  margin: 20px 0 0 0;
+  color: var(--home-muted);
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .profile-links a {
   display: block;
   width: fit-content;
   margin-bottom: 3px;
+  color: var(--home-accent);
+  text-decoration-color: #8ab5bc;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
   white-space: nowrap;
 }
 
+.profile-links a:hover {
+  color: var(--home-accent-hover);
+  text-decoration-color: var(--home-accent-hover);
+}
+
 .bio-column {
-  max-width: 760px;
+  max-width: 720px;
   padding-top: 0;
 }
 
 .bio-column h2 {
-  margin: 0 0 24px 0;
-  color: #111;
-  font-size: 31px;
+  margin: 0 0 26px 0;
+  color: var(--home-ink);
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -235,9 +294,22 @@ a:hover {
 }
 
 .bio-column p {
-  margin: 0 0 18px 0;
+  margin: 0 0 20px 0;
   font-size: 18px;
-  line-height: 1.7;
+  font-weight: 400;
+  line-height: 1.66;
+}
+
+.bio-column a {
+  color: var(--home-accent);
+  text-decoration-color: #8ab5bc;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.bio-column a:hover {
+  color: var(--home-accent-hover);
+  text-decoration-color: var(--home-accent-hover);
 }
 
 .research-summary {
@@ -246,7 +318,7 @@ a:hover {
 }
 
 .contact-block {
-  margin-top: 34px;
+  margin-top: 40px;
 }
 
 .contact-block h3 {
@@ -256,7 +328,7 @@ a:hover {
 
 .contact-block p {
   margin-bottom: 8px;
-  line-height: 1.48;
+  line-height: 1.55;
 }
 
 .contact-block .cv-line {
@@ -265,6 +337,11 @@ a:hover {
 
 .quick-links a {
   margin-right: 4px;
+}
+
+.home-page a:focus-visible {
+  outline: 2px solid var(--home-accent);
+  outline-offset: 4px;
 }
 
 /* =========================================================
@@ -298,7 +375,7 @@ a:hover {
 .research-content {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 300;
-  color: #383838;
+  color: var(--home-ink);
   background: white;
   padding-top: 52px;
   padding-bottom: 100px;
@@ -317,8 +394,8 @@ a:hover {
 .research-wrapper h2 {
   margin: 0 0 30px 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid #dbe8ee;
-  color: #176f8c;
+  border-bottom: 1px solid var(--home-line);
+  color: var(--home-accent);
   font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -339,13 +416,13 @@ a:hover {
 }
 
 .paper-title strong {
-  color: #1f2f38;
+  color: var(--home-ink);
   font-weight: 600;
 }
 
 .draft-note {
   margin-left: 8px;
-  color: #666;
+  color: var(--home-muted);
   font-size: 11pt;
   font-weight: 400;
   white-space: nowrap;
@@ -364,7 +441,7 @@ a:hover {
 
 .paper-note {
   margin: 0 0 10px 0;
-  color: #4c4c4c;
+  color: var(--home-muted);
   font-size: 12pt;
   line-height: 1.45;
 }
@@ -382,19 +459,19 @@ a:hover {
 
 .paper-status {
   margin: 0 0 10px 0;
-  color: #4c4c4c;
+  color: var(--home-muted);
   font-size: 12pt;
   line-height: 1.45;
 }
 
 .journal-name {
-  color: #222;
+  color: var(--home-ink);
   font-weight: 500;
 }
 
 .paper-presentations {
   margin: 0 0 10px 0;
-  color: #666;
+  color: var(--home-muted);
   font-size: 10.5pt;
   line-height: 1.45;
 }
@@ -420,8 +497,8 @@ a:hover {
 }
 
 .abstract-toggle summary:hover {
-  color: #00a0c6;
-  border-color: #00a0c6;
+  color: var(--home-accent-hover);
+  border-color: var(--home-accent-hover);
 }
 
 .abstract-toggle[open] summary {
@@ -470,7 +547,7 @@ a:hover {
 .code-content {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 300;
-  color: #383838;
+  color: var(--home-ink);
   background: white;
   padding-top: 46px;
   padding-bottom: 100px;
@@ -504,7 +581,7 @@ a:hover {
 }
 
 .code-item h2 a {
-  color: #1f2f38;
+  color: var(--home-accent);
   font-weight: 600;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
@@ -570,14 +647,23 @@ a:hover {
   }
 
   .home-content {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 60px;
+  }
+
+  .home-page .topbar {
+    height: auto;
+    padding: 18px 24px;
+  }
+
+  .home-page .site-name {
+    font-size: 22px;
   }
 
   .home-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 32px;
+    row-gap: 38px;
     padding: 0 24px;
   }
 
@@ -602,11 +688,15 @@ a:hover {
   }
 
   .bio-column h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .bio-column p {
     font-size: 18px;
+  }
+
+  .research-summary {
+    text-align: left;
   }
 
   .research-content {
