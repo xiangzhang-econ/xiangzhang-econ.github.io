@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://xiangzhang-econ.github.io/</loc>
-    <priority>1.0</priority>
+    <lastmod>2026-09-11</lastmod>
+    <image:image>
+      <image:loc>https://xiangzhang-econ.github.io/Profile_web.jpg</image:loc>
+    </image:image>
   </url>
   <url>
-    <loc>https://xiangzhang-econ.github.io/research/</loc>
-    <priority>0.8</priority>
+    <loc>https://xiangzhang-econ.github.io/code.html</loc>
+    <lastmod>2026-09-11</lastmod>
   </url>
   <url>
-    <loc>https://xiangzhang-econ.github.io/cv/</loc>
-    <priority>0.8</priority>
+    <loc>https://xiangzhang-econ.github.io/CV_Xiang.pdf</loc>
+    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
-    <loc>https://xiangzhang-econ.github.io/code/</loc>
-    <priority>0.6</priority>
+    <loc>https://xiangzhang-econ.github.io/papers/agglomeration_spillovers_202604.pdf</loc>
+    <lastmod>2026-04-16</lastmod>
+  </url>
+  <url>
+    <loc>https://xiangzhang-econ.github.io/papers/IMO.pdf</loc>
+    <lastmod>2021-03-23</lastmod>
   </url>
 </urlset>

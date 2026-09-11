@@ -490,10 +490,35 @@ a:hover {
 }
 
 .paper-award {
+  width: fit-content;
+  max-width: 100%;
   margin: 0 0 10px 0;
-  color: var(--home-muted);
   font-size: 15px;
   line-height: 1.45;
+}
+
+.paper-award-link {
+  color: var(--home-muted);
+  text-decoration: underline;
+  text-decoration-color: #b8bec1;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.paper-award-link strong {
+  color: #51585b;
+  font-weight: 500;
+}
+
+.paper-award-link:hover,
+.paper-award-link:focus-visible {
+  color: var(--home-accent-hover);
+  text-decoration-color: currentColor;
+}
+
+.paper-award-link:focus-visible {
+  outline: 2px solid #8ab5bc;
+  outline-offset: 2px;
 }
 
 .coauthor-link,
