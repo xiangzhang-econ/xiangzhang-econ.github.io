@@ -393,7 +393,7 @@ a:hover {
 }
 
 .research-wrapper h2 {
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--home-line);
   color: var(--home-accent);
@@ -403,7 +403,7 @@ a:hover {
 }
 
 .research-wrapper h2.section-heading-secondary {
-  margin-top: 72px;
+  margin-top: 50px;
 }
 
 .paper {
@@ -463,13 +463,22 @@ a:hover {
   line-height: 1.45;
 }
 
-.coauthor-link {
-  color: #111;
-  text-decoration: none;
+.coauthor-link,
+.coauthor-link:visited {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-color: #9ba3aa;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 .coauthor-link:hover {
-  color: #111;
+  color: var(--home-accent);
+  text-decoration-color: currentColor;
 }
 
 .coauthor-link:focus-visible {
