@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
     rel="stylesheet"
   >
 
@@ -36,9 +36,7 @@
 
       <article class="paper">
         <p class="paper-title">
-          <strong>The Economics of Agglomeration: Evidence from Grocery Stores</strong>
-          <a class="paper-link" href="papers/agglomeration_spillovers_202604.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6609758" target="_blank" rel="noopener">[SSRN]</a>
+          <strong><a class="paper-title-link" href="papers/agglomeration_spillovers_202604.pdf" target="_blank" rel="noopener">The Economics of Agglomeration: Evidence from Grocery Stores</a></strong>
         </p>
 
         <p class="paper-note">
@@ -55,8 +53,13 @@
           2023, AREUEA National Conference 2023, UEA North American Meeting 2023
         </p> -->
 
-        <details class="abstract-toggle">
-          <summary>Abstract</summary>
+        <div class="paper-actions">
+          <button class="paper-action abstract-button" type="button" aria-label="Show abstract" title="Show abstract" aria-expanded="false" aria-controls="abstract-agglomeration">Abs</button>
+          <a class="paper-action" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6609758" target="_blank" rel="noopener">SSRN</a>
+          <a class="paper-action" href="papers/agglomeration_spillovers_202604.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
+
+        <div class="paper-abstract-panel" id="abstract-agglomeration" hidden>
           <p class="paper-abstract">
             We provide the first large-scale causal estimates of demand-side
             agglomeration spillovers in the non-tradable service sector,
@@ -76,7 +79,7 @@
             the first three post-entry years. Decomposing establishment growth
             rates, the effect is accounted for by higher entry and fewer exits.
           </p>
-        </details>
+        </div>
       </article>
 
       <article class="paper">
@@ -85,8 +88,15 @@
           <em class="draft-note">New Draft Coming Soon</em>
         </p>
 
-        <details class="abstract-toggle">
-          <summary>Abstract</summary>
+        <p class="paper-award">
+          Avinash K. Dixit Prize in International Economics, Princeton University
+        </p>
+
+        <div class="paper-actions">
+          <button class="paper-action abstract-button" type="button" aria-label="Show abstract" title="Show abstract" aria-expanded="false" aria-controls="abstract-relationships">Abs</button>
+        </div>
+
+        <div class="paper-abstract-panel" id="abstract-relationships" hidden>
           <p class="paper-abstract">
             The recent surge in trade and industry policy uncertainty has led to
             growing disruptions in global value chain relationships, posing
@@ -105,7 +115,7 @@
             subsequent influence on firms' endogenous choices, are primary factors
             explaining the observed firm dynamics.
           </p>
-        </details>
+        </div>
       </article>
 
       <h2 class="section-heading-secondary">WORK IN PROGRESS</h2>
@@ -130,17 +140,20 @@
 
       <article class="paper">
         <p class="paper-title">
-          <strong>On the Role of Health in Climbing the Income Ladder: Evidence from China</strong>
-          <a class="paper-link" href="papers/IMO.pdf" target="_blank" rel="noopener">[PDF]</a>
-          <a class="paper-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3576250" target="_blank" rel="noopener">[SSRN]</a>
+          <strong><a class="paper-title-link" href="papers/IMO.pdf" target="_blank" rel="noopener">On the Role of Health in Climbing the Income Ladder: Evidence from China</a></strong>
         </p>
 
         <p class="paper-note">
           with <a class="coauthor-link" href="https://www.ghd.pku.edu.cn/rcdw/jsxl/L/lg/index.htm" target="_blank" rel="noopener">Gordon Liu</a> and <a class="coauthor-link" href="https://sites.google.com/view/fqian/home" target="_blank" rel="noopener">Franklin Qian</a>
         </p>
 
-        <details class="abstract-toggle">
-          <summary>Abstract</summary>
+        <div class="paper-actions">
+          <button class="paper-action abstract-button" type="button" aria-label="Show abstract" title="Show abstract" aria-expanded="false" aria-controls="abstract-health">Abs</button>
+          <a class="paper-action" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3576250" target="_blank" rel="noopener">SSRN</a>
+          <a class="paper-action" href="papers/IMO.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
+
+        <div class="paper-abstract-panel" id="abstract-health" hidden>
           <p class="paper-abstract">
             This paper uses two large panel data sets in China to study the
             effects of a health shock on household income mobility from 1991 to
@@ -157,11 +170,25 @@
             Households who become poor due to a health shock continue to exhibit
             lower income mobility after three years.
           </p>
-        </details>
+        </div>
       </article>
 
     </div>
   </main>
+
+  <script>
+    document.querySelectorAll(".abstract-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const panel = document.getElementById(button.getAttribute("aria-controls"));
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+        button.setAttribute("aria-expanded", String(!isExpanded));
+        button.setAttribute("aria-label", isExpanded ? "Show abstract" : "Hide abstract");
+        button.setAttribute("title", isExpanded ? "Show abstract" : "Hide abstract");
+        panel.hidden = isExpanded;
+      });
+    });
+  </script>
 
 </body>
 </html>
