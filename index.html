@@ -11,11 +11,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="style.css?v=20260910-2" />
+  <link rel="stylesheet" href="style.css?v=20260911-5" />
 </head>
 
 <body class="home-page">
@@ -25,7 +25,6 @@
 
     <nav class="nav-links">
       <a href="index.html" class="active-white">Home</a>
-      <a href="research.html">Research</a>
       <a href="CV_Xiang.pdf">CV</a>
       <a href="code.html">Code</a>
     </nav>
@@ -42,15 +41,25 @@
         <p class="profile-role">PhD Candidate in Economics</p>
         <p class="profile-affiliation">Princeton University</p>
         <div class="profile-links">
-          <a href="https://scholar.google.com/citations?user=P07Qfs0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/xiang-zhang-983518117/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/xiangzhang-econ" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=P07Qfs0AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+            <svg class="profile-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M21.42 10.92a1 1 0 0 0-.02-1.84l-8.57-3.9a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.84l8.58 3.9a2 2 0 0 0 1.66 0z"/>
+              <path d="M22 10v6"/>
+              <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+            </svg>
+            <span>Google Scholar</span>
+          </a>
+          <a href="https://github.com/xiangzhang-econ" target="_blank" rel="noopener">
+            <svg class="profile-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.28 0 6.72-2 6.72-5.5A4.8 4.8 0 0 0 19.5 5.7 4.46 4.46 0 0 0 19.38 2S18.42 1.7 15 3.48a13.38 13.38 0 0 0-7 0C4.58 1.7 3.62 2 3.62 2a4.46 4.46 0 0 0-.12 3.7A4.8 4.8 0 0 0 2.28 9c0 3.5 3.44 5.5 6.72 5.5A4.8 4.8 0 0 0 8 18v4"/>
+              <path d="M9 18c-4.51 2-5-2-7-2"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
         </div>
       </aside>
 
       <div class="bio-column">
-        <h2>About</h2>
-
         <p>
           I am a PhD candidate in economics at
           <a href="https://economics.princeton.edu/" target="_blank">Princeton University</a>.
@@ -64,20 +73,173 @@
         </p>
 
         <div class="contact-block">
-          <p class="cv-line">
-            You can find my CV
-            <a href="CV_Xiang.pdf">here</a>.
-          </p>
-
           <p>
             Feel free to contact me at:
-            <a href="mailto:xiangzhang@princeton.edu">xiangzhang@princeton.edu</a>
+            <a href="mailto:xiangzhang@princeton.edu">xiangzhang@princeton.edu</a>.
+            My CV is <a href="CV_Xiang.pdf">here</a>.
           </p>
+        </div>
+
+        <div class="home-research research-list" id="research" aria-label="Research">
+          <h2>WORKING PAPERS</h2>
+
+          <article class="paper">
+            <p class="paper-title">
+              <strong><a class="paper-title-link" href="papers/agglomeration_spillovers_202604.pdf" target="_blank" rel="noopener">The Economics of Agglomeration: Evidence from Grocery Stores</a></strong>
+            </p>
+
+            <p class="paper-note">
+              with August Chen, <a class="coauthor-link" href="https://sites.google.com/view/fqian/home" target="_blank" rel="noopener">Franklin Qian</a>, and Qianyang Zhang
+            </p>
+
+            <p class="paper-status">
+              <em>Revise and resubmit at <span class="journal-name">Management Science</span></em>
+            </p>
+
+            <!-- <p class="paper-presentations">
+              <em>Presentations:</em> UEA North American Meeting 2026, UEA European Meeting
+              2024, NBER Summer Institute: Real Estate 2023, AREUEA-ASSA Conference
+              2023, AREUEA National Conference 2023, UEA North American Meeting 2023
+            </p> -->
+
+            <div class="paper-actions">
+              <button class="paper-action abstract-button" type="button" aria-label="Show abstract" title="Show abstract" aria-expanded="false" aria-controls="home-abstract-agglomeration">Abs</button>
+              <a class="paper-action" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6609758" target="_blank" rel="noopener">SSRN</a>
+              <a class="paper-action" href="papers/agglomeration_spillovers_202604.pdf" target="_blank" rel="noopener">PDF</a>
+            </div>
+
+            <div class="paper-abstract-panel" id="home-abstract-agglomeration" hidden>
+              <p class="paper-abstract">
+                We provide the first large-scale causal estimates of demand-side
+                agglomeration spillovers in the non-tradable service sector,
+                leveraging data on 851 grocery store openings across the United States
+                between 2019 and 2022. We combine a convolutional neural network with
+                propensity score matching to identify credible counterfactual opening
+                sites and compare business outcomes between actual and counterfactual
+                locations. Grocery store openings increase foot traffic to nearby
+                businesses within 0.1 miles by 23.4 percent within 6&ndash;12 months,
+                with spillovers decaying sharply beyond this radius. The effects are
+                strongest for wholesale and retail establishments and hospitality
+                services, and are substantially attenuated after COVID-19&mdash;from
+                42.7 to 14.6 percent&mdash;consistent with a trip-chaining mechanism.
+                Grocery anchors also reshape the local business landscape: within
+                0.1 miles, establishment growth rates rise by 7.0 percentage points
+                and employment growth rates by 8.8 percentage points, averaged over
+                the first three post-entry years. Decomposing establishment growth
+                rates, the effect is accounted for by higher entry and fewer exits.
+              </p>
+            </div>
+          </article>
+
+          <article class="paper">
+            <p class="paper-title">
+              <strong>Firm-to-firm Relationships, Uncertainty, and Trade</strong>
+              <em class="draft-note">New Draft Coming Soon</em>
+            </p>
+
+            <p class="paper-award">
+              Avinash K. Dixit Prize in International Economics, Princeton University
+            </p>
+
+            <div class="paper-actions">
+              <button class="paper-action abstract-button" type="button" aria-label="Show abstract" title="Show abstract" aria-expanded="false" aria-controls="home-abstract-relationships">Abs</button>
+            </div>
+
+            <div class="paper-abstract-panel" id="home-abstract-relationships" hidden>
+              <p class="paper-abstract">
+                The recent surge in trade and industry policy uncertainty has led to
+                growing disruptions in global value chain relationships, posing
+                additional risks for exporters. I study the effects of relationship
+                termination risk on exporter performance, investment, and search
+                decisions. Event-study analysis highlights that the loss of major
+                international buyers has a long-lasting detrimental impact on exporter
+                performance. Firms losing major buyers experience a decline in export
+                value and an increased likelihood of exiting the export market. These
+                firms intensify their search efforts after the loss, yet their newly
+                formed relationships tend to be short-lived. Inspired by these facts,
+                I build an export dynamics model with search frictions and endogenous
+                relationship-specific investment. Calibration results indicate that
+                exporting firms face substantial search costs, as suggested by the
+                existing literature. Moreover, relationship termination risk, and its
+                subsequent influence on firms' endogenous choices, are primary factors
+                explaining the observed firm dynamics.
+              </p>
+            </div>
+          </article>
+
+          <h2 class="section-heading-secondary">WORK IN PROGRESS</h2>
+
+          <article class="paper">
+            <p class="paper-title">
+              <strong>The Labor Market Dynamics of U.S. Inventors</strong>
+            </p>
+
+            <p class="paper-note">
+              with Meghana Gaur
+            </p>
+          </article>
+
+          <article class="paper">
+            <p class="paper-title">
+              <strong>Input Specificity, Capacity Constraint, and Supply Chain Resilience</strong>
+            </p>
+          </article>
+
+          <h2 class="section-heading-secondary">PRE-DOCTORAL WRITING</h2>
+
+          <article class="paper">
+            <p class="paper-title">
+              <strong><a class="paper-title-link" href="papers/IMO.pdf" target="_blank" rel="noopener">On the Role of Health in Climbing the Income Ladder: Evidence from China</a></strong>
+            </p>
+
+            <p class="paper-note">
+              with <a class="coauthor-link" href="https://www.ghd.pku.edu.cn/rcdw/jsxl/L/lg/index.htm" target="_blank" rel="noopener">Gordon Liu</a> and <a class="coauthor-link" href="https://sites.google.com/view/fqian/home" target="_blank" rel="noopener">Franklin Qian</a>
+            </p>
+
+            <div class="paper-actions">
+              <button class="paper-action abstract-button" type="button" aria-label="Show abstract" title="Show abstract" aria-expanded="false" aria-controls="home-abstract-health">Abs</button>
+              <a class="paper-action" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3576250" target="_blank" rel="noopener">SSRN</a>
+              <a class="paper-action" href="papers/IMO.pdf" target="_blank" rel="noopener">PDF</a>
+            </div>
+
+            <div class="paper-abstract-panel" id="home-abstract-health" hidden>
+              <p class="paper-abstract">
+                This paper uses two large panel data sets in China to study the
+                effects of a health shock on household income mobility from 1991 to
+                2016. We compare outcomes of households with a member who receives a
+                health shock with comparable households that do not receive any
+                health shocks. To do so, we match on demographic and worker
+                characteristics of household members. At the aggregated level, a
+                health shock lowers the probability of "getting out of the
+                low-income trap" by 8.4 percentage points. At the household level, a
+                health shock lowers household income per capita by 13.1% and income
+                position by 3.9 percentiles. We show that the reduced labor supply
+                at the extensive margin and decrease in labor productivity, measured
+                in hourly wage, explain the majority of households' income loss.
+                Households who become poor due to a health shock continue to exhibit
+                lower income mobility after three years.
+              </p>
+            </div>
+          </article>
         </div>
       </div>
 
     </div>
   </main>
+
+  <script>
+    document.querySelectorAll(".abstract-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const panel = document.getElementById(button.getAttribute("aria-controls"));
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+        button.setAttribute("aria-expanded", String(!isExpanded));
+        button.setAttribute("aria-label", isExpanded ? "Show abstract" : "Hide abstract");
+        button.setAttribute("title", isExpanded ? "Show abstract" : "Hide abstract");
+        panel.hidden = isExpanded;
+      });
+    });
+  </script>
 
 </body>
 </html>
