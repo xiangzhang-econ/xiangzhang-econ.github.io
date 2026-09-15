@@ -33,7 +33,7 @@
     "url": "https://xiangzhang-econ.github.io/",
     "name": "Xiang Zhang | Princeton Economics PhD Candidate",
     "description": "Xiang Zhang is a Princeton University economics PhD candidate researching international trade, macroeconomics, spatial economics, firm organization, and labor markets.",
-    "dateModified": "2026-09-11",
+    "dateModified": "2026-09-14",
     "mainEntity": {
       "@type": "Person",
       "@id": "https://xiangzhang-econ.github.io/#xiang-zhang",
@@ -84,7 +84,7 @@
     rel="stylesheet"
   >
 
-  <link rel="stylesheet" href="style.css?v=20260911-7" />
+  <link rel="stylesheet" href="style.css?v=20260914-7" />
 </head>
 
 <body class="home-page">
@@ -95,7 +95,6 @@
     <nav class="nav-links">
       <a href="index.html" class="active-white">Home</a>
       <a href="CV_Xiang.pdf">CV</a>
-      <a href="code.html">Code</a>
     </nav>
   </header>
 
@@ -237,26 +236,6 @@
             </div>
           </article>
 
-          <h2 class="section-heading-secondary">WORK IN PROGRESS</h2>
-
-          <article class="paper">
-            <p class="paper-title">
-              <strong>The Labor Market Dynamics of U.S. Inventors</strong>
-            </p>
-
-            <p class="paper-note">
-              with Meghana Gaur
-            </p>
-          </article>
-
-          <article class="paper">
-            <p class="paper-title">
-              <strong>Input Specificity, Capacity Constraint, and Supply Chain Resilience</strong>
-            </p>
-          </article>
-
-          <h2 class="section-heading-secondary">PRE-DOCTORAL WRITING</h2>
-
           <article class="paper">
             <p class="paper-title">
               <strong><a class="paper-title-link" href="papers/IMO.pdf" target="_blank" rel="noopener">On the Role of Health in Climbing the Income Ladder: Evidence from China</a></strong>
@@ -291,6 +270,82 @@
               </p>
             </div>
           </article>
+
+          <h2 class="section-heading-secondary">WORK IN PROGRESS</h2>
+
+          <article class="paper">
+            <p class="paper-title">
+              <strong>The Labor Market Dynamics of U.S. Inventors</strong>
+            </p>
+
+            <p class="paper-note">
+              with Meghana Gaur
+            </p>
+          </article>
+
+          <article class="paper">
+            <p class="paper-title">
+              <strong>Input Specificity, Capacity Constraint, and Supply Chain Resilience</strong>
+            </p>
+          </article>
+
+          <section class="home-code" id="code" aria-labelledby="code-heading">
+            <h2 class="section-heading-secondary" id="code-heading">CODE</h2>
+
+            <article class="code-item">
+              <p class="paper-title">
+                <strong>REG_SS</strong>
+              </p>
+
+              <p class="paper-note">
+                with <a class="coauthor-link" href="https://sites.google.com/site/rradao/" target="_blank" rel="noopener">Rodrigo Ad&atilde;o</a>,
+                <a class="coauthor-link" href="https://www.princeton.edu/~mkolesar/" target="_blank" rel="noopener">Michal Koles&aacute;r</a>,
+                and <a class="coauthor-link" href="https://sites.google.com/site/edumoralescasado/" target="_blank" rel="noopener">Eduardo Morales</a>
+              </p>
+
+              <div class="code-actions">
+                <button class="code-action-link abstract-button" type="button" aria-label="Show abstract" title="Show abstract" aria-expanded="false" aria-controls="home-code-abstract-reg-ss">Abs</button>
+                <a class="code-action-link" href="https://ideas.repec.org/c/boc/bocode/s458758.html" target="_blank" rel="noopener">Stata Page</a>
+                <a class="code-action-link" href="https://github.com/xiangzhang-econ/ShiftShareSEStata" target="_blank" rel="noopener">GitHub</a>
+              </div>
+
+              <div class="code-abstract-panel" id="home-code-abstract-reg-ss" hidden>
+                <p class="code-description">
+                  Reg_ss is a Stata module to computes confidence intervals, standard errors,
+                  and p-values in a linear regression in which the regressor of interest
+                  has a shift-share structure using procedures from
+                  <a href="https://academic.oup.com/qje/article/134/4/1949/5550766" target="_blank" rel="noopener">Ad&atilde;o, Koles&aacute;r, and Morales (Q.J.E. 2019)</a>.
+                </p>
+              </div>
+            </article>
+
+            <article class="code-item">
+              <p class="paper-title">
+                <strong>IVREG_SS</strong>
+              </p>
+
+              <p class="paper-note">
+                with <a class="coauthor-link" href="https://sites.google.com/site/rradao/" target="_blank" rel="noopener">Rodrigo Ad&atilde;o</a>,
+                <a class="coauthor-link" href="https://www.princeton.edu/~mkolesar/" target="_blank" rel="noopener">Michal Koles&aacute;r</a>,
+                and <a class="coauthor-link" href="https://sites.google.com/site/edumoralescasado/" target="_blank" rel="noopener">Eduardo Morales</a>
+              </p>
+
+              <div class="code-actions">
+                <button class="code-action-link abstract-button" type="button" aria-label="Show abstract" title="Show abstract" aria-expanded="false" aria-controls="home-code-abstract-ivreg-ss">Abs</button>
+                <a class="code-action-link" href="https://ideas.repec.org/c/boc/bocode/s458759.html" target="_blank" rel="noopener">Stata Page</a>
+                <a class="code-action-link" href="https://github.com/xiangzhang-econ/ShiftShareSEStata" target="_blank" rel="noopener">GitHub</a>
+              </div>
+
+              <div class="code-abstract-panel" id="home-code-abstract-ivreg-ss" hidden>
+                <p class="code-description">
+                  Ivreg_ss is a Stata module to computes confidence intervals, standard
+                  errors, and p-values in an IV regression in which the excluded
+                  instrumental variable has a shift-share structure using procedures from
+                  <a href="https://academic.oup.com/qje/article/134/4/1949/5550766" target="_blank" rel="noopener">Ad&atilde;o, Koles&aacute;r, and Morales (Q.J.E. 2019)</a>.
+                </p>
+              </div>
+            </article>
+          </section>
         </div>
       </div>
 
