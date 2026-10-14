@@ -4,16 +4,106 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Code | Xiang Zhang</title>
+  <title>Code | Xiang Zhang, Princeton Economics</title>
   <meta name="description" content="Stata code by Xiang Zhang for shift-share regression and instrumental-variable inference." />
-  <link rel="canonical" href="https://xiangzhang-econ.github.io/#code" />
-  <meta http-equiv="refresh" content="0; url=index.html#code" />
+  <meta name="author" content="Xiang Zhang" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://xiangzhang-econ.github.io/code.html" />
+  <link rel="author" href="https://xiangzhang-econ.github.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;family=Source+Sans+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css?v=20260921-3" />
+</head>
+
+<body class="home-page code-page">
+  <header class="topbar">
+    <a class="site-name" href="index.html">Xiang Zhang</a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="CV_Xiang.pdf">CV</a>
+      <a href="code.html" class="active-white">Code</a>
+    </nav>
+  </header>
+
+  <main class="research-content">
+    <div class="research-wrapper code-main">
+      <h1 class="interior-page-title">Code</h1>
+
+      <article class="code-item">
+        <p class="paper-title">
+          <strong>REG_SS</strong>
+        </p>
+
+        <p class="paper-note">
+          with <a class="coauthor-link" href="https://sites.google.com/site/rradao/" target="_blank" rel="noopener">Rodrigo Ad&atilde;o</a>,
+          <a class="coauthor-link" href="https://www.princeton.edu/~mkolesar/" target="_blank" rel="noopener">Michal Koles&aacute;r</a>, and
+          <a class="coauthor-link" href="https://sites.google.com/site/edumoralescasado/" target="_blank" rel="noopener">Eduardo Morales</a>
+        </p>
+
+        <div class="code-actions">
+          <button class="code-action-link abstract-button" type="button" aria-label="Show description" title="Show description" aria-expanded="false" aria-controls="code-description-reg-ss">Introduction</button>
+          <a class="code-action-link" href="https://ideas.repec.org/c/boc/bocode/s458758.html" target="_blank" rel="noopener">Stata Page</a>
+          <a class="code-action-link" href="https://github.com/xiangzhang-econ/ShiftShareSEStata" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <div class="code-abstract-panel" id="code-description-reg-ss" hidden>
+          <p class="code-description">
+            REG_SS is a Stata module that computes confidence intervals, standard errors,
+            and p-values in a linear regression in which the regressor of interest has a
+            shift-share structure, using procedures from
+            <a href="https://academic.oup.com/qje/article/134/4/1949/5550766" target="_blank" rel="noopener">Ad&atilde;o, Koles&aacute;r, and Morales (Q.J.E. 2019)</a>.
+          </p>
+        </div>
+      </article>
+
+      <article class="code-item">
+        <p class="paper-title">
+          <strong>IVREG_SS</strong>
+        </p>
+
+        <p class="paper-note">
+          with <a class="coauthor-link" href="https://sites.google.com/site/rradao/" target="_blank" rel="noopener">Rodrigo Ad&atilde;o</a>,
+          <a class="coauthor-link" href="https://www.princeton.edu/~mkolesar/" target="_blank" rel="noopener">Michal Koles&aacute;r</a>, and
+          <a class="coauthor-link" href="https://sites.google.com/site/edumoralescasado/" target="_blank" rel="noopener">Eduardo Morales</a>
+        </p>
+
+        <div class="code-actions">
+          <button class="code-action-link abstract-button" type="button" aria-label="Show description" title="Show description" aria-expanded="false" aria-controls="code-description-ivreg-ss">Introduction</button>
+          <a class="code-action-link" href="https://ideas.repec.org/c/boc/bocode/s458759.html" target="_blank" rel="noopener">Stata Page</a>
+          <a class="code-action-link" href="https://github.com/xiangzhang-econ/ShiftShareSEStata" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <div class="code-abstract-panel" id="code-description-ivreg-ss" hidden>
+          <p class="code-description">
+            IVREG_SS is a Stata module that computes confidence intervals, standard
+            errors, and p-values in an IV regression in which the excluded instrumental
+            variable has a shift-share structure, using procedures from
+            <a href="https://academic.oup.com/qje/article/134/4/1949/5550766" target="_blank" rel="noopener">Ad&atilde;o, Koles&aacute;r, and Morales (Q.J.E. 2019)</a>.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
 
   <script>
-    window.location.replace("index.html#code");
+    document.querySelectorAll(".abstract-button").forEach((button) => {
+      button.addEventListener("click", () => {
+        const panel = document.getElementById(button.getAttribute("aria-controls"));
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+        button.setAttribute("aria-expanded", String(!isExpanded));
+        button.setAttribute("aria-label", isExpanded ? "Show description" : "Hide description");
+        button.setAttribute("title", isExpanded ? "Show description" : "Hide description");
+        panel.hidden = isExpanded;
+      });
+    });
   </script>
-</head>
-<body>
-  <p>Code is now available on the <a href="index.html#code">homepage</a>.</p>
 </body>
 </html>
