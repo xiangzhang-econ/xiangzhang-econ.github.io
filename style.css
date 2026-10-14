@@ -489,6 +489,10 @@ a:hover {
   line-height: 1.45;
 }
 
+.paper-date {
+  margin-left: 12px;
+}
+
 .paper-award {
   width: fit-content;
   max-width: 100%;
