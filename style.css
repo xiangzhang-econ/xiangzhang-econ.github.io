@@ -307,6 +307,69 @@ a:hover {
   padding-top: 0;
 }
 
+.home-introduction .home-wrapper {
+  grid-template-areas:
+    "portrait identity"
+    "portrait biography";
+}
+
+.home-introduction .photo-column {
+  grid-area: portrait;
+}
+
+.home-introduction .bio-column {
+  grid-area: biography;
+  min-width: 0;
+}
+
+.intro-heading {
+  grid-area: identity;
+  min-width: 0;
+  max-width: 780px;
+  margin: 0 0 22px;
+}
+
+.intro-name {
+  margin: 0;
+  color: var(--home-ink);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.intro-affiliation {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 8px;
+  margin: 8px 0 0;
+  color: var(--home-muted);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.intro-affiliation a {
+  color: var(--home-accent);
+  text-decoration-color: #8ab5bc;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.intro-affiliation a:hover {
+  color: var(--home-accent-hover);
+  text-decoration-color: currentColor;
+}
+
+.bio-column > .job-market {
+  margin-top: 24px;
+}
+
+.job-market strong {
+  font-weight: 600;
+}
+
 .bio-column h2 {
   margin: 0 0 22px 0;
   color: var(--home-ink);
@@ -368,6 +431,10 @@ a:hover {
   margin-top: 36px;
   font-weight: 400;
   scroll-margin-top: 24px;
+}
+
+.home-introduction .home-research {
+  margin-top: 44px;
 }
 
 .quick-links a {
@@ -731,6 +798,41 @@ a:hover {
   text-decoration-color: var(--home-accent-hover);
 }
 
+/* Main homepage sizing; comparison previews keep their original scale. */
+.home-balanced .intro-name {
+  font-size: 30px;
+}
+
+.home-balanced .intro-affiliation {
+  font-size: 17px;
+}
+
+.home-balanced .bio-column > p,
+.home-balanced .contact-block p {
+  font-size: 18px;
+}
+
+.home-balanced .research-list h2 {
+  font-size: 22px;
+}
+
+.home-balanced .paper-title {
+  font-size: 20px;
+}
+
+.home-balanced .paper-note,
+.home-balanced .paper-title > .paper-date {
+  font-size: 16px;
+}
+
+.home-balanced .paper-presentations {
+  font-size: 15px;
+}
+
+.home-balanced .paper {
+  margin-bottom: 32px;
+}
+
 /* =========================================================
    Mobile layout
    ========================================================= */
@@ -793,6 +895,26 @@ a:hover {
     grid-template-columns: 1fr;
     row-gap: 38px;
     padding: 0 24px;
+  }
+
+  .home-introduction .home-wrapper {
+    grid-template-areas:
+      "identity"
+      "portrait"
+      "biography";
+    row-gap: 24px;
+  }
+
+  .intro-heading {
+    margin-bottom: 0;
+  }
+
+  .intro-affiliation {
+    flex-direction: column;
+  }
+
+  .intro-separator {
+    display: none;
   }
 
   .photo-column {
