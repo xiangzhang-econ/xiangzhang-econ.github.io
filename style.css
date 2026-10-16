@@ -834,7 +834,7 @@ a:hover {
 }
 
 .home-balanced .research-list h2 {
-  color: #3f5a60;
+  color: var(--home-accent);
   font-size: 20px;
 }
 
