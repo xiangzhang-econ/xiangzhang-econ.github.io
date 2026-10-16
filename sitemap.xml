@@ -3,14 +3,14 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://xiangzhang-econ.github.io/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <image:image>
       <image:loc>https://xiangzhang-econ.github.io/Profile_web.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://xiangzhang-econ.github.io/code.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://xiangzhang-econ.github.io/CV_Xiang.pdf</loc>
