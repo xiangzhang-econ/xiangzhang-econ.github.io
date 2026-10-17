@@ -715,7 +715,8 @@ a:hover {
   letter-spacing: 0;
 }
 
-.code-item {
+.code-item,
+.teaching-course {
   max-width: 740px;
   margin-bottom: 34px;
 }
@@ -798,7 +799,7 @@ a:hover {
   text-decoration-color: var(--home-accent-hover);
 }
 
-/* Main homepage hierarchy; comparison previews keep their original styling. */
+/* Shared typography and colors across the site. */
 .home-balanced {
   --home-ink: #343b40;
   --home-muted: #596168;
@@ -832,12 +833,14 @@ a:hover {
   font-size: 18px;
 }
 
-.home-balanced .paper-abstract {
+.home-balanced .paper-abstract,
+.home-balanced .code-description {
   font-size: 16px;
 }
 
 .home-balanced .research-summary,
-.home-balanced .paper-abstract {
+.home-balanced .paper-abstract,
+.home-balanced .code-description {
   text-align: justify;
   text-align-last: left;
   hyphens: auto;
