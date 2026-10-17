@@ -827,7 +827,10 @@ a:hover {
   font-size: 16px;
 }
 
-.home-balanced .bio-column > p,
+.home-balanced .bio-column > p {
+  font-size: 18px;
+}
+
 .home-balanced .contact-block p,
 .home-balanced .paper-abstract {
   font-size: 16px;
@@ -850,7 +853,7 @@ a:hover {
 
 .home-balanced .paper-note,
 .home-balanced .paper-title > .paper-date {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .home-balanced .paper-status {
