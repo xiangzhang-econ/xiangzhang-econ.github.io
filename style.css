@@ -855,15 +855,20 @@ a:hover {
   font-size: 18px;
 }
 
-.home-balanced .paper-note,
-.home-balanced .paper-title > .paper-date {
+.home-balanced .paper-note {
   font-size: 16px;
+}
+
+.home-balanced .paper .paper-note,
+.home-balanced .code-item .paper-note,
+.home-balanced .paper-title > .paper-date {
+  font-size: 15px;
 }
 
 .home-balanced .paper-status {
   border-left-color: #8ab5bc;
   color: var(--home-ink);
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .home-balanced .journal-name {
@@ -873,7 +878,7 @@ a:hover {
 }
 
 .home-balanced .paper-award {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .home-balanced .draft-note,
