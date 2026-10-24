@@ -185,6 +185,10 @@ a:hover {
   color: var(--home-accent-hover);
 }
 
+.home-introduction {
+  --home-content-width: 1178px;
+}
+
 .home-content {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
@@ -201,8 +205,8 @@ a:hover {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  column-gap: 68px;
+  grid-template-columns: 210px minmax(0, 840px);
+  column-gap: 80px;
   align-items: start;
 
   padding: 0 24px;
@@ -216,7 +220,7 @@ a:hover {
 }
 
 .profile-photo-frame {
-  width: 200px;
+  width: 210px;
   max-width: 100%;
   aspect-ratio: 1;
   border-radius: 0;
@@ -252,7 +256,7 @@ a:hover {
 }
 
 .profile-links {
-  width: 200px;
+  width: 210px;
   max-width: 100%;
   margin: 22px 0 0 0;
   border-top: 1px solid var(--home-line);
@@ -303,7 +307,7 @@ a:hover {
 }
 
 .bio-column {
-  max-width: 780px;
+  max-width: 840px;
   padding-top: 0;
 }
 
