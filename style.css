@@ -216,9 +216,10 @@ a:hover {
 }
 
 .profile-photo-frame {
-  width: 180px;
+  width: 200px;
+  max-width: 100%;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: 0;
   border: 1px solid var(--home-line);
   background: #f2f6f7;
   box-shadow: 0 8px 24px rgba(23, 69, 76, 0.08);
@@ -230,9 +231,7 @@ a:hover {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: 37% 10%;
-  transform: scale(1.15);
-  transform-origin: center;
+  object-position: center;
 }
 
 .profile-name {
@@ -253,7 +252,8 @@ a:hover {
 }
 
 .profile-links {
-  width: 180px;
+  width: 200px;
+  max-width: 100%;
   margin: 22px 0 0 0;
   border-top: 1px solid var(--home-line);
   color: var(--home-muted);
@@ -984,8 +984,9 @@ a:hover {
     text-align: center;
   }
 
-  .profile-photo-frame {
-    width: 168px;
+  .profile-photo-frame,
+  .profile-links {
+    width: 180px;
   }
 
   .profile-name {

@@ -1,0 +1,13 @@
+Tool: Built-in image generation/editing
+Input: xz_portrait.jpg
+Output: xz_portrait_headshot.png
+Status: Used for the homepage portrait and sharing previews.
+
+Use case: identity-preserve.
+Asset type: square portrait photograph for a personal academic website, displayed at 200 pixels wide.
+Input image: the supplied xz_portrait.jpg is the edit target, not merely inspiration.
+Primary request: make a tighter head-and-shoulders crop with clearer natural contrast so the person's face is much easier to see at small website size.
+Composition: square 1024 x 1024 output. Crop from slightly above the hair to the upper chest, with shoulders reaching the side edges, a little breathing room above the hair, and the face near the horizontal center. The head and shoulders should occupy substantially more of the frame than in the original. Do not clip the top of the hair or chin.
+Adjustments: gently increase contrast and clarity, lift facial shadows slightly, and retain detail in the dark navy jacket. Keep natural skin color and the original daylight character.
+Strict invariants: preserve this exact person's facial features, face shape, expression, glasses, hair, clothing, pose, and realistic skin texture as closely as possible. Preserve the original brick background and its existing light patterns. This is a crop and restrained exposure/contrast correction only, not a new portrait.
+Avoid: beautification, face reshaping, skin smoothing, changed teeth or glasses, artificial sharpening, dramatic relighting, added blur or bokeh, replacement backgrounds, text, borders, or watermarks.
