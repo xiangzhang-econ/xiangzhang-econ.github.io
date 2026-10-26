@@ -725,6 +725,10 @@ a:hover {
   margin-bottom: 34px;
 }
 
+.teaching-course.teaching-course--plain-links a {
+  text-decoration: none;
+}
+
 .home-code {
   scroll-margin-top: 24px;
 }
