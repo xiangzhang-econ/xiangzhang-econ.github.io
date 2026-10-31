@@ -186,7 +186,7 @@ a:hover {
 }
 
 .home-introduction {
-  --home-content-width: 1178px;
+  --home-content-width: 1202px;
 }
 
 .home-content {
@@ -205,8 +205,8 @@ a:hover {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 210px minmax(0, 840px);
-  column-gap: 80px;
+  grid-template-columns: 250px minmax(0, 840px);
+  column-gap: 64px;
   align-items: start;
 
   padding: 0 24px;
@@ -220,7 +220,7 @@ a:hover {
 }
 
 .profile-photo-frame {
-  width: 210px;
+  width: 250px;
   max-width: 100%;
   aspect-ratio: 1;
   border-radius: 0;
@@ -256,7 +256,7 @@ a:hover {
 }
 
 .profile-links {
-  width: 210px;
+  width: 250px;
   max-width: 100%;
   margin: 22px 0 0 0;
   border-top: 1px solid var(--home-line);
@@ -994,7 +994,7 @@ a:hover {
 
   .profile-photo-frame,
   .profile-links {
-    width: 180px;
+    width: 220px;
   }
 
   .profile-name {
