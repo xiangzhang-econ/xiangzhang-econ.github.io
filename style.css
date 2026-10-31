@@ -186,7 +186,7 @@ a:hover {
 }
 
 .home-introduction {
-  --home-content-width: 1192px;
+  --home-content-width: 1177px;
 }
 
 .home-content {
@@ -205,7 +205,7 @@ a:hover {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 240px minmax(0, 840px);
+  grid-template-columns: 225px minmax(0, 840px);
   column-gap: 64px;
   align-items: start;
 
@@ -220,7 +220,7 @@ a:hover {
 }
 
 .profile-photo-frame {
-  width: 240px;
+  width: 225px;
   max-width: 100%;
   aspect-ratio: 1;
   border-radius: 0;
@@ -256,7 +256,7 @@ a:hover {
 }
 
 .profile-links {
-  width: 240px;
+  width: 225px;
   max-width: 100%;
   margin: 22px 0 0 0;
   border-top: 1px solid var(--home-line);
