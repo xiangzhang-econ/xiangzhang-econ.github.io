@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://xiangzhang-econ.github.io/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <image:image>
       <image:loc>https://xiangzhang-econ.github.io/xz_portrait_headshot2.jpg</image:loc>
     </image:image>
@@ -19,6 +19,10 @@
   <url>
     <loc>https://xiangzhang-econ.github.io/CV_Xiang.pdf</loc>
     <lastmod>2026-07-22</lastmod>
+  </url>
+  <url>
+    <loc>https://xiangzhang-econ.github.io/papers/JMP_XZ.pdf</loc>
+    <lastmod>2026-11-01</lastmod>
   </url>
   <url>
     <loc>https://xiangzhang-econ.github.io/papers/Draft_Agglomeration.pdf</loc>
