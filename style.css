@@ -222,7 +222,8 @@ a:hover {
 .profile-photo-frame {
   width: 225px;
   max-width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 15 / 16;
+  margin-inline: auto;
   border-radius: 0;
   border: 1px solid var(--home-line);
   background: #f2f6f7;
@@ -258,7 +259,7 @@ a:hover {
 .profile-links {
   width: 225px;
   max-width: 100%;
-  margin: 22px 0 0 0;
+  margin: 22px auto 0;
   border-top: 1px solid var(--home-line);
   color: var(--home-muted);
   font-size: 15.5px;
@@ -990,11 +991,6 @@ a:hover {
     padding-top: 0;
     position: static;
     text-align: center;
-  }
-
-  .profile-photo-frame,
-  .profile-links {
-    width: 220px;
   }
 
   .profile-name {
